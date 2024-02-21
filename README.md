@@ -3,10 +3,10 @@
 
 ### Input Features
 * type - "CASH_OUT" : 1,
-         "PAYMENT":2,
+         "PAYMENT" : 2,
          "CASH_IN" : 3,
-         "TRANSFER":4,
-         'DEBIT':5
+         "TRANSFER" : 4,
+         'DEBIT': 5
 * amount
 * oldbalanceOrg
 * newbalanceOrig
