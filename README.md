@@ -10,3 +10,7 @@
 * amount
 * oldbalanceOrg
 * newbalanceOrig
+
+### Output Feature
+* isFraud - 0 - Not Fraud
+            1 - Fraud
