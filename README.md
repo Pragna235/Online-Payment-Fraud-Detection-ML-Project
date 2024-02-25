@@ -14,3 +14,6 @@
 ### Output Feature
 * isFraud - 0 - Not Fraud
             1 - Fraud
+
+  ![Screenshot 2024-02-24 164108](https://github.com/Pragna235/Online-Payment-Fraud-Detection-ML-Project/assets/109524200/68da6dfe-8752-44df-873c-ee7b03b9adaa)
+
