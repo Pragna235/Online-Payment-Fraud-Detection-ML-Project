@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="background-color: #007bff ;color: #fff;padding: 1rem;text-align: center">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health Checkup</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Online Payment Fraud Detection</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="{{ url_for('static',filename='problem statement.html')}}">Problem Statement</a></li>
+                <li><a href="{{ url_for('static',filename='evaluation.html')}}">Evaluation</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="home_container">
+    <section id="form">
+        <h2>Fill in Your Details</h2>
+        <form method="POST", action="{{url_for('posting')}}">
+            <label for="step"> Step &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+            <input type="text" name="step" id="step" placeholder="Hours"> <br>
+            <label for="type">Transaction type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label> 
+            <select id="type" name="type">
+                <option value="1">--------CASH  OUT--------</option>
+                <option value="2">------PAYMENT------</option>
+                <option value="3">------CASH IN------</option>
+                <option value="4">------TRANSFER------</option>
+                <option value="5">------DEBIT------</option>
+            </select> <br>
+
+            &nbsp;&nbsp;&nbsp; <label for="amount">Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label> 
+            <input type="text" name="amount" id="amount" placeholder="Amount"><br>
+
+            <label for="balance-1"> Sender Old Balance &nbsp;&nbsp;:</label> 
+            <input type="text" name="balance-1" id="balance-1" placeholder="old balance"><br>
+
+            <label for="balance-2"> Receiver Old Balance :</label> 
+            <input type="text" name="balance-2" id="balance-2" placeholder="old balance"><br>
+
+            <label for="balance-3">Receiver New Balance :</label> 
+            <input type="text" name="balance-3" id="balance-3" placeholder="new balance"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </section>
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2024 Fraud Detection Model</p>
+    </footer> 
+</body>
+</html>

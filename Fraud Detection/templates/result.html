@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Health Checkup Result</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+</head>
+<body bgcolor="#a3cfb4">
+    <div class="result_container">
+    <center>
+        <h1>Result...</h1><br>
+
+        {% if data == 0 %}
+            <h1 style="color: green">Valid Transaction</h1><br>
+        {% else %}
+            <h1 style="color: red;">Invalid Transaction</h1>
+            <h2 style="color: rgb(243, 53, 53);">Please check once</h2>
+        {% endif %}
+        <br>
+        <a href='/'>Home</a>
+    </center>
+    </div>
+</body>
+</html>
